@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>ExcelAbstraction</id>
-        <version>0.0.0</version>
+        <version>0.0.1</version>
         <authors>Kelly Selden</authors>
         <projectUrl>https://github.com/kellyselden/ExcelAbstraction</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -10,6 +10,6 @@
         <tags>Excel</tags>
     </metadata>
     <files>
-        <file src="bin\Release\ExcelAbstraction.dll" target="lib\ExcelAbstraction.dll" />
+        <file src="..\..\ExcelAbstraction\ExcelAbstraction\bin\Release\ExcelAbstraction.dll" target="lib\ExcelAbstraction.dll" />
     </files>
 </package>
