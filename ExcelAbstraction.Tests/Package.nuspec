@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>ExcelAbstraction.Tests</id>
+        <version>0.0.2</version>
+        <authors>Kelly Selden</authors>
+        <projectUrl>https://github.com/kellyselden/ExcelAbstraction</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Tests for ExcelAbtraction implementations</description>
+        <tags>Excel ExcelAbstraction</tags>
+        <dependencies>
+            <dependency id="ExcelAbstraction" version="0.0.1" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="bin\Release\ExcelAbstraction.Tests.dll" target="lib\ExcelAbstraction.Tests.dll" />
+    </files>
+</package>
