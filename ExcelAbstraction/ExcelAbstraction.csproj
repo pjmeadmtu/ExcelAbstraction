@@ -33,9 +33,12 @@
   <ItemGroup>
     <Compile Include="Entities\Cell.cs" />
     <Compile Include="Entities\ExcelVersion.cs" />
+    <Compile Include="Entities\Range.cs" />
     <Compile Include="Entities\Row.cs" />
+    <Compile Include="Entities\Validation.cs" />
     <Compile Include="Entities\Workbook.cs" />
     <Compile Include="Entities\Worksheet.cs" />
+    <Compile Include="Helpers\ExcelHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\IExcelService.cs" />
   </ItemGroup>
