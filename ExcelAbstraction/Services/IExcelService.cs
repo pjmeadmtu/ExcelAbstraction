@@ -13,6 +13,6 @@ namespace ExcelAbstraction.Services
 		void WriteWorkbook(Workbook workbook, ExcelVersion version, Stream stream);
 		object GetWorkbook(string path);
 		void SaveWorkbook(object workbook, string path);
-		void AddValidations(object workbook, int sheetIndex, params Validation[] validations);
+		void AddValidations(object workbook, int sheetIndex, ExcelVersion version, params Validation[] validations);
 	}
 }

@@ -150,11 +150,12 @@ namespace ExcelAbstraction.Tests
 
 		public virtual void ExcelService_AddValidations_Hack()
 		{
-			ExcelService.WriteWorkbook(MemoryWorkbook, ExcelVersion.Xlsx, _newFileName);
+			var version = ExcelVersion.Xlsx;
+			ExcelService.WriteWorkbook(MemoryWorkbook, version, _newFileName);
 			object oldWorkbook = ExcelService.GetWorkbook(_newFileName);
 			File.Delete(_newFileName);
 
-			ExcelService.AddValidations(oldWorkbook, 0, _validations);
+			ExcelService.AddValidations(oldWorkbook, 0, version, _validations);
 			ExcelService.SaveWorkbook(oldWorkbook, _newFileName);
 			var newWorkbook = ExcelService.ReadWorkbook(_newFileName);
 			var newValidations = newWorkbook.Worksheets.First().Validations;
