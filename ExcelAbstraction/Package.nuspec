@@ -2,15 +2,12 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>ExcelAbstraction</id>
-        <version>0.0.2</version>
+        <version>0.0.3</version>
         <authors>Kelly Selden</authors>
         <projectUrl>https://github.com/kellyselden/ExcelAbstraction</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Excel abstraction for injecting excel implementations</description>
         <tags>Excel</tags>
-        <dependencies>
-            <dependency id="TestHelper" version="0.0.1" />
-        </dependencies>
     </metadata>
     <files>
         <file src="bin\Release\ExcelAbstraction.dll" target="lib\ExcelAbstraction.dll" />
