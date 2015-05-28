@@ -7,8 +7,9 @@ namespace ExcelAbstraction.Entities
 		public string Name { get; private set; }
 		public int Index { get; private set; }
 		public int ColumnCount { get; private set; }
+		public bool IsHidden { get; set; }
 		public IEnumerable<Row> Rows { get; private set; }
-		public ICollection<Validation> Validations { get; private set; }
+		public ICollection<DataValidation> Validations { get; private set; }
 
 		public Worksheet(string name, int index, int columnCount, IEnumerable<Row> rows)
 		{
@@ -16,7 +17,7 @@ namespace ExcelAbstraction.Entities
 			Index = index;
 			ColumnCount = columnCount;
 			Rows = rows;
-			Validations = new List<Validation>();
+			Validations = new List<DataValidation>();
 		}
 	}
 }

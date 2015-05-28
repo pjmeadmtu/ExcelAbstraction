@@ -2,15 +2,16 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>ExcelAbstraction.Tests</id>
-        <version>0.0.4</version>
+        <version>0.0.5</version>
         <authors>Kelly Selden</authors>
         <projectUrl>https://github.com/kellyselden/ExcelAbstraction</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Tests for ExcelAbtraction implementations</description>
         <tags>Excel ExcelAbstraction</tags>
         <dependencies>
-            <dependency id="ExcelAbstraction" version="0.0.3" />
+            <dependency id="ExcelAbstraction" version="0.0.7" />
             <dependency id="TestHelper" version="0.0.1" />
+            <dependency id="DeepEqual" version="1.4.0.0" />
         </dependencies>
     </metadata>
     <files>

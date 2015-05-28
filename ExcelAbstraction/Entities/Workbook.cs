@@ -8,10 +8,12 @@ namespace ExcelAbstraction.Entities
 	public class Workbook
 	{
 		public IEnumerable<Worksheet> Worksheets { get; private set; }
+		public ICollection<NamedRange> Names { get; private set; }
 
 		public Workbook(IEnumerable<Worksheet> worksheets)
 		{
 			Worksheets = worksheets;
+			Names = new List<NamedRange>();
 		}
 
 		public DataSet AsDataSet(bool isFirstRowHeader)

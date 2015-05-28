@@ -39,6 +39,8 @@ namespace ExcelAbstraction.Tests
 						var row1 = rows1[k];
 						var row2 = rows2[k];
 
+						if (row1 == null && row2 == null)
+							continue;
 						if (row1.Index != row2.Index)
 							return false;
 

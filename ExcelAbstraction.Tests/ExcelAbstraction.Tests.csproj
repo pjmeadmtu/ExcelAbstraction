@@ -49,7 +49,8 @@
   </Choose>
   <ItemGroup>
     <Compile Include="ExcelCompare.cs" />
-    <Compile Include="ExcelServiceTests.cs" />
+    <Compile Include="ExcelServiceMemoryTests.cs" />
+    <Compile Include="ExcelServiceDiskTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ExcelHelperTests.cs" />
     <Compile Include="WorkbookTests.cs" />
@@ -68,13 +69,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ExcelAbstraction\ExcelAbstraction.csproj">
-      <Project>{9a8dcdf3-f8d6-4976-b715-41496aaed25b}</Project>
-      <Name>ExcelAbstraction</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\ExcelAbstraction\ExcelAbstraction.csproj">
+      <Project>{9A8DCDF3-F8D6-4976-B715-41496AAED25B}</Project>
+      <Name>ExcelAbstraction</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

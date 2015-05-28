@@ -9,9 +9,8 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ExcelAbstraction</RootNamespace>
     <AssemblyName>ExcelAbstraction</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,10 +31,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Entities\Cell.cs" />
+    <Compile Include="Entities\DataValidation.cs" />
+    <Compile Include="Entities\DataValidationType.cs" />
     <Compile Include="Entities\ExcelVersion.cs" />
+    <Compile Include="Entities\NamedRange.cs" />
     <Compile Include="Entities\Range.cs" />
     <Compile Include="Entities\Row.cs" />
-    <Compile Include="Entities\Validation.cs" />
     <Compile Include="Entities\Workbook.cs" />
     <Compile Include="Entities\Worksheet.cs" />
     <Compile Include="Helpers\ExcelHelper.cs" />
