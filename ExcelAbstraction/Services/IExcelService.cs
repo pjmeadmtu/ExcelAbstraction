@@ -18,5 +18,9 @@ namespace ExcelAbstraction.Services
 		void AddNames(object workbook, ExcelVersion version, params NamedRange[] names);
 		void AddRows(object workbook, string sheetName, params Row[] rows);
 		void AddValidations(object workbook, string sheetName, ExcelVersion version, params DataValidation[] validations);
-	}
+        Stream AddAuthor(Stream stream, ExcelVersion version, string author);
+        string GetAuthor(Stream stream, ExcelVersion version);
+        Stream AddComments(Stream stream, ExcelVersion version, string comment);
+        string GetComments(Stream stream, ExcelVersion version);
+    }
 }

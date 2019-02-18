@@ -21,5 +21,13 @@ namespace ExcelAbstraction.Tests
 			var cell = new Cell(0, 2, "$40,000,000");
 			Assert.AreEqual(cell.DataFormat, string.Empty);
 		}
+
+        [TestMethod]
+        public void TestComment()
+        {
+            string comment = "Comment 1";
+            var cell = new Cell(0, 2, "$40,000,000", comment: comment);
+            Assert.AreEqual(cell.Comment, comment);
+        }
 	}
 }

@@ -9,13 +9,15 @@ namespace ExcelAbstraction.Entities
 		public int ColumnIndex { get; private set; }
 		public string Value { get; private set; }
 		public string DataFormat { get; private set; }
+        public string Comment { get; private set; }
 
-		public Cell(int rowIndex, int columnIndex, string value, string dataFormat = "")
+		public Cell(int rowIndex, int columnIndex, string value, string dataFormat = "", string comment = "")
 		{
 			RowIndex = rowIndex;
 			ColumnIndex = columnIndex;
 			Value = value;
 			DataFormat = dataFormat;
+            Comment = comment;
 		}
 	}
 }
