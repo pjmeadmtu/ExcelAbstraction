@@ -53,6 +53,7 @@
     <Compile Include="ExcelServiceDiskTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ExcelHelperTests.cs" />
+    <Compile Include="ExcelCellTest.cs" />
     <Compile Include="WorkbookTests.cs" />
   </ItemGroup>
   <ItemGroup>
